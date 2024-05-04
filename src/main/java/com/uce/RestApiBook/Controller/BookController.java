@@ -15,7 +15,7 @@ import java.util.List;
 import java.util.Optional;
 
 
-@CrossOrigin(origins = "http://localhost:3001")
+@CrossOrigin(origins = "https://react-book-frontend-production.up.railway.app/")
 @RestController
 @RequestMapping("/api")
 @Tag(name = "Api Rest for books")
