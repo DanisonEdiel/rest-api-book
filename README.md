@@ -1,19 +1,31 @@
+# Spring Boot Book REST API
 
-2. Import the project into your preferred IDE (e.g., IntelliJ IDEA or Eclipse) as a Maven project.
+This Spring Boot book REST API provides endpoints to manage book information, such as retrieving all books, creating new books, updating existing book information, and deleting books.
 
-3. Configure the MySQL database in your local environment. You can find instructions for configuring the database in the `application.properties` file.
+## Project Status
 
-4. Run the Spring Boot application. The application will be available at `http://localhost:8080`.
+This project is currently in development and is being worked on for version 1.0.0.
+
+## Installation and Setup
+
+1. Clone this repository to your local machine using the following command:
+git clone https://github.com/your-user/spring-boot-book-rest-api.git
+
+3. Import the project into your preferred IDE (e.g., IntelliJ IDEA or Eclipse) as a Maven project.
+
+4. Configure the MySQL database in your local environment. You can find instructions for configuring the database in the `application.properties` file.
+
+5. Run the Spring Boot application. The application will be available at `http://localhost:8080`.
 
 ## Usage
 
 The book REST API exposes the following endpoints:
 
 - `GET /api/books`: Get all books.
-- `GET /api/books/{id}`: Get a book by its ID.
-- `POST /api/books`: Create a new book.
-- `PUT /api/books/{id}`: Update existing book information.
-- `DELETE /api/books/{id}`: Delete a book by its ID.
+- `GET /api/book/{id}`: Get a book by its ID.
+- `POST /api/create`: Create a new book.
+- `PUT /api/update/{id}`: Update existing book information.
+- `DELETE /api/delete/{id}`: Delete a book by its ID.
 
 You can use tools such as Postman or cURL to send HTTP requests to these endpoints.
 
