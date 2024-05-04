@@ -32,7 +32,7 @@ jobs:
         if: ${{ github.event_name == 'push' }}
         uses: bervProject/railway-deploy@main
         with:
-          railway_token: f6fd8c46-09a4-4a1d-b6e1-e6cdc6b888c0
+          railway_token: ${{ secrets.RAILWAY_TOKEN }}
           service: "rest-api-book"
           detach: true
 
