@@ -18,7 +18,7 @@ import java.util.Optional;
 @CrossOrigin(origins = "https://react-book-frontend-production.up.railway.app/")
 @RestController
 @RequestMapping("/api")
-@Tag(name = "Api Rest for books")
+@Tag(name = "Api Rest for books use Swagger")
 public class BookController {
     @Autowired
     private BookRepository bookRepository;
