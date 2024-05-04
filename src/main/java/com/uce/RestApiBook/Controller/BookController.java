@@ -14,6 +14,8 @@ import com.uce.RestApiBook.Repository.BookRepository;
 import java.util.List;
 import java.util.Optional;
 
+
+@CrossOrigin(origins = "http://localhost:3001")
 @RestController
 @RequestMapping("/api")
 @Tag(name = "Api Rest for books")
