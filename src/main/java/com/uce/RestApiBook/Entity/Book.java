@@ -18,6 +18,8 @@ public class Book {
     private Long id;
     @Column(name = "name")
     private  String name;
+    @Column(name="image")
+    private String image;
     @Column(name="description")
     private String description;
     @Column(name ="price")
