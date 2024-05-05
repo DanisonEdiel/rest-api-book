@@ -16,11 +16,11 @@ public class Book {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @Column(name = "name")
+    @Column(name = "name", length = 255)
     private  String name;
-    @Column(name="image")
+    @Column(name="image" , length = 650)
     private String image;
-    @Column(name="description")
+    @Column(name="description", length = 650)
     private String description;
     @Column(name ="price")
     private double price;
