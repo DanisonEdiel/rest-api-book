@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.Optional;
 
 
-@CrossOrigin(origins = {"https://react-book-frontend-production.up.railway.app/","http://localhost:3000/"})
+@CrossOrigin(origins = {"https://react-book-frontend-production-0be6.up.railway.app/","http://localhost:3000/"})
 @RestController
 @RequestMapping("/api")
 @Tag(name = "Api Rest for books use Swagger 3 - Books")
