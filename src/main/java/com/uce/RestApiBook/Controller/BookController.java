@@ -65,4 +65,8 @@ public class BookController {
         return ResponseEntity.noContent().build();
     }
 
+    @GetMapping("/books/precio")
+    public List<Book> buscarLibrosPorPrecio() {
+        return bookService.buscarLibrosPorPrecio(20.0, 60.0);
+
 }

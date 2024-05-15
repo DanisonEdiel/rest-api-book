@@ -8,4 +8,8 @@ import com.uce.RestApiBook.Entity.Book;
 
 @Repository
 public interface BookRepository extends JpaRepository<Book, Long> {
+    List<Book> findByPriceBetween(Double priceMin, Double priceMax);
+
+    @Query("SELECT b FROM Book b WHERE b.price BETWEEN :priceMin AND :priceMax")
+    List<Book> findByPriceInRange(@Param("priceMin") Double priceMin, @Param("priceMax") Double priceMax);
 }
