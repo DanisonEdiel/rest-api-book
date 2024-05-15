@@ -71,6 +71,6 @@ public class BookController {
             @RequestParam(value = "max", defaultValue = "60") Double precioMax) {
         return bookRepository(precioMin, precioMax);
 
-    
+            }
 
 }
