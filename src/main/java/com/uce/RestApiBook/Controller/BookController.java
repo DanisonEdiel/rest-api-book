@@ -65,6 +65,12 @@ public class BookController {
         return ResponseEntity.noContent().build();
     }
 
+    @GetMapping("/books/precio")
+    public List<Book> buscarLibrosPorPrecio(
+            @RequestParam(value = "min", defaultValue = "20") Double precioMin,
+            @RequestParam(value = "max", defaultValue = "60") Double precioMax) {
+        return bookRepository(precioMin, precioMax);
+
     
 
 }
